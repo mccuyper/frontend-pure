@@ -9,7 +9,8 @@
 }
 
 p {
-    font-weight: 300;
+    font-weight: 200;
+    font-size: 1.5em;
     /* color: #111; */
 }
 .banner {
@@ -84,7 +85,7 @@ header .logo {
     font-weight: 800;
     font-size: 2em;
 }
-header .logo span, #about span {
+header .logo span, #about span, .title span {
     color: rgb(255, 0, 0);
 }
 .nav {
@@ -103,11 +104,11 @@ header .logo span, #about span {
 section {
     padding: 100px;
 }
-#about p, #about h2{
+#about p, #about h2, .title h2, .title p, h3{
     color: #000;
 
 }
-#about span {
+#about span, .title span {
     font-size: 2em;
     font-weight: 800;
 }
@@ -123,7 +124,7 @@ section {
     width: 48%;
 }
 
-#about h2 {
+#about h2, .title h2{
     font-size: 2em; 
     font-weight: 500;
 }
@@ -141,4 +142,37 @@ section {
     height: 100%;
     object-fit: cover;
     border-radius: 25px;
+}
+.title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.menu .content {
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+.menu .content .box {
+    width: 340px;
+    margin: 20px;
+    border: 15px solid rgb(255, 255, 255);
+    box-shadow: 0 5px 35px rgba(0,0,0,0.1);
+}
+.menu .content .box .imageBox {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+.menu .content .box .imageBox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
