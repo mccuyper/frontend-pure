@@ -7,11 +7,16 @@
     color: #fff;
     scroll-behavior: smooth;
 }
-
+h2 {
+    margin-bottom: 15px;
+}
 p {
     font-weight: 200;
     font-size: 1.5em;
     /* color: #111; */
+}
+#menu  {
+    padding-top: 0px;
 }
 .banner {
     position: relative;
@@ -23,38 +28,45 @@ p {
     align-items: center;
     background: url('../images/bg.jpg');
 }
+
 .content-banner {
     max-width: 900px;
     text-align: center;
 }
-body{ 
+
+body {
     min-height: 1000px;
 }
+
 .banner .content-banner h2 {
     font-size: 5em;
     /* color: #fff; */
 }
-.content-banner p{
+
+.content-banner p {
     font-size: 1em;
-    
 }
+
 .btn {
     font-size: 1em;
     /* color: #fff; */
-     background: #ff0157;
-     display: inline-block;
-     padding:  10px 30px;
-     margin-top: 20px;
-     text-transform: uppercase;
-     text-decoration: none;
-     letter-spacing: 2px;
-     transition: 0.5s;
+    background: #ff0157;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
 }
-.btn:hover{letter-spacing: 6px;}
+
+.btn:hover {
+    letter-spacing: 6px;
+}
 
 header {
     position: fixed;
-    top:0;
+    top: 0;
     left: 0;
     width: 100%;
     padding: 40px 100px;
@@ -64,54 +76,73 @@ header {
     align-items: center;
     transition: 0.5s;
 }
+
 header.sticky {
     background-color: #fff;
     padding: 20px 100px;
 }
-header.sticky .logo, header.sticky li a {
+
+header.sticky .logo,
+header.sticky li a {
     color: black;
-    
 }
-header.sticky li a{
+
+header.sticky li a {
     font-size: 1.2em;
     font-weight: 300;
 }
+
 header li a:hover {
-    color:rgb(255, 0, 0)
+    color: rgb(255, 0, 0)
 }
+
 header .logo {
     text-decoration: none;
     color: #fff;
     font-weight: 800;
     font-size: 2em;
 }
-header .logo span, #about span, .title span {
+
+header .logo span,
+#about span,
+.title span {
     color: rgb(255, 0, 0);
 }
+
 .nav {
     position: relative;
     display: flex;
 }
+
 .nav li {
     list-style: none;
     margin-left: 30px;
 }
-.nav li a{
+
+.nav li a {
     text-decoration: none;
     font-size: 1.5em;
     font-weight: 500;
 }
-section {
-    padding: 100px;
-}
-#about p, #about h2, .menu .menu .title h2, .menu .title p, h3{
-    color: #000;
 
+section {
+    padding: 50px 100px 50px 100px;
 }
-#about span, .title span {
+
+#about p,
+#about h2,
+.menu .menu .title h2,
+.menu .title p,
+h3 {
+    color: #000;
+}
+
+#about span,
+.title span {
     font-size: 2em;
     font-weight: 800;
 }
+
 .row {
     position: relative;
     width: 100%;
@@ -124,17 +155,19 @@ section {
     width: 48%;
 }
 
-#about h2, .title h2{
-    font-size: 2em; 
+#about h2,
+.title h2 {
+    font-size: 2em;
     font-weight: 500;
     color: #111;
 }
 
- .imageBox {
+.imageBox {
     position: relative;
     width: 100%;
     min-height: 400px;
 }
+
 .imageBox img {
     position: absolute;
     top: 0;
@@ -144,6 +177,7 @@ section {
     object-fit: cover;
     border-radius: 25px;
 }
+
 .title {
     width: 100%;
     display: flex;
@@ -151,6 +185,7 @@ section {
     align-items: center;
     flex-direction: column;
 }
+
 .content {
     display: flex;
     margin-top: 40px;
@@ -159,31 +194,34 @@ section {
     text-align: center;
     flex-direction: row-reverse;
 }
+
 .menu .content .box {
     width: 440px;
     margin: 20px;
     border: 15px solid rgb(255, 255, 255);
-    box-shadow: 0 5px 35px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
 }
-.menu .content .box .text, 
+
+.menu .content .box .text,
 .experts .box .text {
     padding: 15px 0 5px;
 }
-.menu .content .box .text h3, 
+
+.menu .content .box .text h3,
 .experts .box .text h3 {
     font-weight: 400;
     color: #111
 }
 
-.experts  .content {
+.experts .content {
     display: flex;
-    
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
     margin-top: 40px;
 }
-.experts  .content .box {
+
+.experts .content .box {
     width: 250px;
     margin: 15px;
 }
@@ -192,11 +230,12 @@ section {
     background: url(../images/bg2.jpg);
     background-size: cover;
 }
-.white .titleText{
+
+.white .titleText {
     color: #fff;
 }
 
-.reviews .content .box  {
+.reviews .content .box {
     width: 340px;
     margin: 20px;
     padding: 40px;
@@ -206,6 +245,7 @@ section {
     align-items: center;
     flex-direction: column;
 }
+
 .reviews .content .box .imgBox {
     position: relative;
     width: 80px;
@@ -214,9 +254,11 @@ section {
     border-radius: 50%;
     overflow: hidden;
 }
+
 .reviews .content .text p {
     color: #111;
 }
+
 .reviews .content .box .imgBox img {
     position: absolute;
     top: 0;
@@ -225,18 +267,23 @@ section {
     height: 100%;
     object-fit: cover;
 }
-.reviews .content .text p{
+
+.reviews .content .text p {
     text-align: center;
     font-style: italic;
     margin-bottom: 20px;
 }
+
 .reviews .content .text h3 {
     text-align: end;
     font-size: 1em;
     color: rgb(255, 0, 0);
     margin-top: 20px;
 }
-.contacts .title .contact_par, .contacts .contactForm .inputBox input, textarea {
+
+.contacts .title .contact_par,
+.contacts .contactForm .inputBox input,
+textarea {
     color: #111;
 }
 
@@ -244,10 +291,11 @@ section {
     background: url(../images/bg3.jpg);
     background-size: cover;
 }
+
 .contactForm {
     padding: 75px 50px;
     background: white;
-    box-shadow: 0 15px 50px rgba(0,0,0, 0.1);
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
     max-width: 500px;
     margin-top: 50px;
 }
@@ -264,7 +312,9 @@ section {
     width: 100%;
     margin-bottom: 20px;
 }
-.contactForm .inputBox input, textarea {
+
+.contactForm .inputBox input,
+textarea {
     width: 100%;
     border: 1px solid #555;
     padding: 10px;
@@ -273,6 +323,7 @@ section {
     font-weight: 300;
     resize: none;
 }
+
 .contactForm .inputBox input[type="submit"] {
     font-size: 1em;
     color: black;
@@ -287,3 +338,98 @@ section {
     border: none;
     cursor: pointer;
 }
+
+.contactForm .inputBox input[type="submit"]:hover {
+    background: rgb(231, 2, 2);
+}
+
+@media (max-width: 991px) {
+    header,
+    header.sticky {
+        padding: 10px 20px;
+    }
+    header .nav {
+        display: none;
+    }
+    .menuToggle {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(../images/menu.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+    .menuToggle.active {
+        background: url(../images/close.png);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+    header.sticky .menuToggle {
+        filter: invert(1);
+    }
+    .nav.active {
+        width: 100%;
+        height: calc(100% - 60px);
+        position: fixed;
+        top: 60px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background-color: whitesmoke;
+    }
+    header .nav li {
+        margin: 10px 0 10px 0;
+    }
+    header .nav li a {
+        color: black;
+        font-size: 2.5em;
+    }
+    section {
+        padding: 20px;
+    }
+    .banner .content-banner h2
+    {
+        font-size: 4em;
+        margin-bottom: 20px;
+    }
+    .banner .content h2 {
+        font-size: 3em;
+        text-align: center;
+        color: black;
+    }
+    .content-banner p { 
+    font-size: 1.5em;
+    padding: 40px;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .row .col50 {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+   
+    #experts .titleText, .row .col50 h2 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px){
+        .content h2 {
+            font-size: 2.2em;
+            color: black;
+        }
+        .banner .content-banner h2 {
+            font-size: 2.2em;
+            
+        }
+        .content-banner p {
+            font-size: 1em;
+            padding: 0;
+        }
+    }
